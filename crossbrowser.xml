@@ -1,0 +1,21 @@
+
+<suite parallel="tests" name="Suite">
+	<test thread-count="5" parallel="tests" name="Test1">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="testngpractise.RestaurantTest"/>
+			<methods>
+				<include name="addRestaurant" />
+			</methods>
+		</classes>
+	</test>
+	<test thread-count="5" parallel="tests" name="Test2">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testngpractise.RestaurantTest"/>
+			<methods>
+				<include name="updateRestaurant"/>
+			</methods>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
